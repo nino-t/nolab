@@ -1,0 +1,31 @@
+{
+  "name": "nolab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "nino-t <ninotrisno34@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "config": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "longjohn": "^0.2.12",
+    "marko": "^4.13.5",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "node-notifier": "^5.2.1",
+    "pretty-error": "^2.1.1",
+    "recluster": "^0.4.5",
+    "serve-static": "^1.13.2"
+  }
+}
