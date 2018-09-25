@@ -1,3 +1,4 @@
+const config = require('../../config')
 const morgan = require('morgan')
 const chalk = require('chalk')
 const _ = require('lodash')
@@ -22,7 +23,7 @@ class Log {
   }
 
   static print (message, app, color) {
-    app = app || 'nolab'
+    app = app || 'Application'
     color = color || 'cyan'
 
     if (_.isUndefined(message)) {
@@ -57,7 +58,7 @@ class Log {
   }
 
   static debug (...args) {
-    if (process.env.NODE_ENV !== 'development') {
+    if (config.APP_ENV !== 'development') {
       return
     }
 
@@ -80,8 +81,8 @@ class Log {
     console.log()
   }
 
-  static Nolab (message) {
-    return Log.print(message, 'nolab', 'cyan')
+  static Application (message) {
+    return Log.print(message, 'application', 'cyan')
   }
 }
 
